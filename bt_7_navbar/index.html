@@ -12,8 +12,7 @@
 </head>
 <body>
 
-
-  <div class="navbar navbar-expand-lg navbar-light bg-secondary shadow-lg">
+  <div class="navbar navbar-expand-lg navbar-light bg-subtle-secondary shadow-lg">
    <div class="container">
       <a href="" class="navbar-brand h2">Navbar</a>
 
@@ -32,8 +31,23 @@
           <li class="nav-item">
             <a href="" class="nav-link">About</a>
           </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="" data-bs-auto-close="outside">Products</a>
+            <ul class="dropdown-menu shadow-lg">
+              <li class="dropdown-item">Mouse</li>
+              <li class="dropdown-item">Keyboard</li>
+              <li class="dropdown-item">Moniter</li>
+              <li class="dropdown-item dropend">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" >Spreakers</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">JBL spreakers</li>
+              <li class="dropdown-divider"></li>
+                  <li class="dropdown-item">Sony spreakers</li>
+                  <li class="dropdown-item">Boat spreakers</li>
+                  <li class="dropdown-item">bolt spreakers</li>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">Contact</a>
