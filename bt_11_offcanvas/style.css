@@ -1,8 +1,79 @@
-#parent > .collapse{
-    display: none;
+
+
+.fadeLeft{
+    animation: fadeLeft 0.5s;
 }
 
+@keyframes fadeLeft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
 
-#first .collapse{
-    display: block;
+.fadeRight{
+    animation: fadeRight 0.5s;
+}
+
+@keyframes fadeRight{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.fadeUp{
+    animation: fadeUp 0.5s;
+}
+
+@keyframes fadeUp{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.fadeDown{
+    animation: fadeDown 0.5s;
+}
+
+@keyframes fadeDown{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeZoom{
+    animation: fadeZoom 0.5s;
+}
+
+@keyframes fadeZoom{
+    from{
+        scale: 0.5;
+    }
+    to{
+        scale: 1;
+    }
 }
