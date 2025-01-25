@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+   
+</head>
+<body>
+
+
+  <header>
+    <div class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+
+        <h2 class="navbar-brand">KJ</h2>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">Mouse</li>
+                  <li class="dropdown-item">keyboard</li>
+                  <li class="dropdown-item">moniter</li>
+                  <li class="dropdown-item dropdown dropend">
+                    <a  class="nav-link text-secondary dropdown-toggle" data-bs-toggle="dropdown">laptop</a>
+
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">Macbook</li>
+                      <li class="dropdown-item">HP thinkbook</li>
+                      <li class="dropdown-item">Lenovo</li>
+                      <li class="dropdown-item">Notebook </li>
+                    </ul>
+
+                  </li>
+                </ul>
+
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item p-2">
+                <a href="#login" class="btn btn-warning btn-sm" data-bs-toggle="modal" >Login</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+
+
+  <section>
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-dialog-centered modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Repeat</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="row p-4">
+              <div class="col-12">
+                <label for="" class="form-label">Name:</label>
+                <div class="input-group">
+                  <span class="input-group-text">👤</span>
+                  <input type="text" placeholder="Enter name" class="form-control form-control-sm">
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="" class="form-label">Email:</label>
+                <div class="input-group">
+                  <span class="input-group-text">📧</span>
+                  <input type="text" placeholder="Enter Email" class="form-control form-control-sm">
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="" class="form-label">Phone:</label>
+                <div class="input-group">
+                  <span class="input-group-text">📞</span>
+                  <input type="text" placeholder="Enter phone" class="form-control form-control-sm">
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="" class="form-label">password:</label>
+                <div class="input-group">
+                  <span class="input-group-text">🔑</span>
+                  <input type="text" placeholder="Enter Password" class="form-control form-control-sm">
+                </div>
+              </div>
+            
+            </div>
+
+
+
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-sm btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  
+
+
+  <section>
+    <div class="border border-danger position-fixed top-0 start-0 bg-light w-100 d-none" style="height: 100vh;">
+
+      <div class="border border-success position-absolute top-50 start-50 translate-middle w-25" style="height: 500px;">
+
+        <div>
+          <h1 class="lorem10"></h1>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+</body>
+
+<script src="bootstrap.bundle.min.js"></script>
+</html>
