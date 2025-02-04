@@ -1,0 +1,156 @@
+
+
+.fadeLeft{
+    animation: fadeLeft 0.5s;
+}
+
+@keyframes fadeLeft{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.fadeRight{
+    animation: fadeRight 0.5s;
+}
+
+@keyframes fadeRight{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.fadeUp{
+    animation: fadeUp 0.5s;
+}
+
+@keyframes fadeUp{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.fadeDown{
+    animation: fadeDown 0.5s;
+}
+
+@keyframes fadeDown{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeZoom{
+    animation: fadeZoom 0.5s;
+}
+
+@keyframes fadeZoom{
+    from{
+        scale: 0.5;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+
+
+.accordion-button:not(.collapsed){
+    background-color: pink !important;
+}
+
+
+
+
+.carousel-indicators{
+    border:1px solid green
+}
+
+
+.carousel-indicators >button{
+    border: 1px solid red !important;
+    padding:15px !important;
+    border-radius: 50%;
+    background-image: url(https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/09/resize_dsc_0108.jpg) !important;
+    background-size: contain;
+}
+
+.carousel-indicators >button.active{
+    border: 1px solid red !important;
+    padding:25px !important;
+    border-radius: 50%;
+    background-image: url(https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/09/resize_dsc_0108.jpg) !important;
+    background-size: contain;
+}
+
+
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.anime:before{
+    content: " ";
+    display: block;
+    border:10px solid pink;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+    animation: anim1 8s linear infinite;
+}
+
+.anime:after{
+    content: " ";
+    display: block;
+    border:10px solid pink;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+    animation: anim1 8s linear infinite reverse;
+}
+
+@keyframes anim1 {
+    0%{
+        transform: translate(0%, -100%);
+    }
+    25%{
+        transform: translate(0px, 0%);
+    }
+    50%{
+        transform: translate(100%, 0%);
+    }
+    75%{
+        transform: translate(100%, -100%);
+    }
+    100%{
+        transform: translate(0%, -100%);
+    }
+}
